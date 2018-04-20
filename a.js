@@ -1,4 +1,11 @@
-if(targetNames == undefined) {
+function inFrame() {
+    try {
+        return window.self !== window.top;
+    } catch (e) {
+        return true;
+    }
+}
+if(!inFrame()) {
 	var targetNames = ["Trinetest","annijap","Rick.1","HubertS","Dennisdc","NickDP","Kasper","Melli79","le magnifique"];
 
 	var tempNameEl = document.getElementById("ctl00_ddMenuTab");
