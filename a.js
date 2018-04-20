@@ -1,5 +1,5 @@
 if(targetNames == undefined) {
-	var targetNames = ["MadameBerlot", "Trinetest","annijap","Rick.1","HubertS","Dennisdc","NickDP","Kasper","Melli79","le magnifique"];
+	var targetNames = ["Trinetest","annijap","Rick.1","HubertS","Dennisdc","NickDP","Kasper","Melli79","le magnifique"];
 
 	var tempNameEl = document.getElementById("ctl00_ddMenuTab");
 	var name = "";
